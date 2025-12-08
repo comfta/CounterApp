@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CounterApp.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+
+        <Label
+            Text="Counter App"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="CounterLabel"
+            Text="0"
+            FontSize="48"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Margin="0,20,0,20" />
+
+        <HorizontalStackLayout
+            Spacing="20"
+            HorizontalOptions="Center">
+
+            <Button
+                x:Name="MinusButton"
+                Text="-"
+                FontSize="32"
+                WidthRequest="80"
+                HeightRequest="80"
+                Clicked="OnMinusButtonClicked" />
+
+            <Button
+                x:Name="PlusButton"
+                Text="+"
+                FontSize="32"
+                WidthRequest="80"
+                HeightRequest="80"
+                Clicked="OnPlusButtonClicked" />
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
